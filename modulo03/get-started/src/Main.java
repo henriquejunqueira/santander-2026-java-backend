@@ -85,6 +85,43 @@ public class Main {
         // System.out.println("=====================================");
         // System.out.printf("!true = %s \n", !true);
         // System.out.printf("!false = %s \n", !false);
+
+        // Aula 04 - Trabalhando com operadores parte 2
+        // var scanner = new Scanner(System.in);
+        // System.out.println("Informe o primeiro número: ");
+        // var value1 = scanner.nextInt();
+        // var value1 = scanner.nextFloat();
+        // System.out.println("Informe o segundo número: ");
+        // var value2 = scanner.nextInt();
+        // var value2 = scanner.nextFloat();
+        // System.out.println(value1 + " + " + value2 + " = " + (value1 + value2));
+        // System.out.printf("%s + %s = %s\n", value1, value2, value1 + value2);
+        // System.out.printf("%s - %s = %s\n", value1, value2, value1 - value2);
+        // System.out.printf("%s / %s = %s\n", value1, value2, value1 / value2);
+        // System.out.printf("%s %% %s = %s\n", value1, value2, value1 % value2);
+        // System.out.printf("%s * %s = %s\n", value1, value2, value1 * value2);
+
+        // var value = 5 + 9 * 10 - 5 / 2;
+        // var value = (5 + 9) * (10 - 5) / 2;
+        // var value = 5;
+        // value = value + 12;
+        // value += 12;
+        // value -= 12;
+        // value /= 12;
+        // value *= 12;
+        // System.out.println(value);
+
+        // var scanner = new Scanner(System.in);
+        // System.out.println("Informe o primeiro número: ");
+        // var value1 = scanner.nextInt();
+        // System.out.printf(" a raiz quadrada de %s é %s\n", value1, Math.sqrt(value1));
+        // System.out.printf(" a potência de %s é %s\n", value1, Math.pow(value1, 2));
+        // System.out.printf(" a potência de %s é %s\n", value1, Math.pow(value1, 3));
+
+        var value = 50;
+        //System.out.println(++value);
+        System.out.println(--value);
+        System.out.println(value);
     }
 
 }
