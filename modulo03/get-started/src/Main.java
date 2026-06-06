@@ -118,10 +118,55 @@ public class Main {
         // System.out.printf(" a potência de %s é %s\n", value1, Math.pow(value1, 2));
         // System.out.printf(" a potência de %s é %s\n", value1, Math.pow(value1, 3));
 
-        var value = 50;
-        //System.out.println(++value);
-        System.out.println(--value);
-        System.out.println(value);
+        // var value = 50;
+        // System.out.println(++value);
+        // System.out.println(--value);
+        // System.out.println(value);
+
+        // Aula 05 - Trabalhando com operadores Bitwise (Bit-a-Bit)
+        //var value1 = 6;
+        // var value1 = -9;
+        // var value1 = -789;
+        // var value1 = 9;
+        // var binary1 = Integer.toBinaryString(value1);
+        // System.out.printf("Primeiro número da operação %s (representação binária %s)\n", value1, binary1);
+        // var value2 = 5;
+        // var value2 = 2;
+        // var binary2 = Integer.toBinaryString(value2);
+        // System.out.printf("Segundo número da operação %s (representação binária %s)\n", value2, binary2);
+        // var result = value1 | value2;
+        // var binaryResult = Integer.toBinaryString(result);
+        // System.out.printf(" %s | %s = %s (representação binária %s)\n", value1, value2 , result, binaryResult);
+        // var result = value1 & value2;
+        // var result = value1 ^ value2;
+        // var result = value1 << value2;
+        // var binaryResult = Integer.toBinaryString(result);
+        // System.out.printf(" %s & %s = %s (representação binária %s)\n", value1, value2 , result, binaryResult);
+        // System.out.printf(" %s ^ %s = %s (representação binária %s)\n", value1, value2 , result, binaryResult);
+        // System.out.println(Integer.toBinaryString(Integer.MAX_VALUE));
+
+        //var result = ~value1;
+        //var binaryResult = Integer.toBinaryString(result);
+        //System.out.printf(" ~%s = %s (representação binária %s)\n", value1, result, binaryResult);
+
+        // var value1 = 9;
+        // var value1 = -8;
+        // var value1 = 8;
+        // var value1 = 12;
+        var value1 = -12;
+        var binary1 = Integer.toBinaryString(value1);
+        System.out.printf("Primeiro número da operação %s (representação binária %s)\n", value1, binary1);
+        var value2 = 2;
+        // var value2 = 8;
+        System.out.printf("Segundo número da operação %s\n", value2);
+        // var result = value1 << value2;
+        // var result = value1 >> value2;
+        var result = value1 >>> value2;
+        var binaryResult = Integer.toBinaryString(result);
+        // System.out.printf(" %s << %s = %s (representação binária %s)\n", value1, value2 , result, binaryResult);
+        // System.out.printf(" %s >> %s = %s (representação binária %s)\n", value1, value2 , result, binaryResult);
+        System.out.printf(" %s >>> %s = %s (representação binária %s)\n", value1, value2 , result, binaryResult);
+        // System.out.println(Integer.toBinaryString(Integer.MAX_VALUE));
     }
 
 }
