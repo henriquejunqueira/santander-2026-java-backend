@@ -1,6 +1,8 @@
 // import java.util.Scanner;
 // import java.util.*; // pega tudo que tem dentro do pacote, exceto dentro de outro pacote (não recomendado)
 
+import java.time.OffsetDateTime;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -153,20 +155,59 @@ public class Main {
         // var value1 = -8;
         // var value1 = 8;
         // var value1 = 12;
-        var value1 = -12;
-        var binary1 = Integer.toBinaryString(value1);
-        System.out.printf("Primeiro número da operação %s (representação binária %s)\n", value1, binary1);
-        var value2 = 2;
+        // var value1 = -12;
+        // var binary1 = Integer.toBinaryString(value1);
+        // System.out.printf("Primeiro número da operação %s (representação binária %s)\n", value1, binary1);
+        // var value2 = 2;
         // var value2 = 8;
-        System.out.printf("Segundo número da operação %s\n", value2);
+        // System.out.printf("Segundo número da operação %s\n", value2);
         // var result = value1 << value2;
         // var result = value1 >> value2;
-        var result = value1 >>> value2;
-        var binaryResult = Integer.toBinaryString(result);
+        // var result = value1 >>> value2;
+        // var binaryResult = Integer.toBinaryString(result);
         // System.out.printf(" %s << %s = %s (representação binária %s)\n", value1, value2 , result, binaryResult);
         // System.out.printf(" %s >> %s = %s (representação binária %s)\n", value1, value2 , result, binaryResult);
-        System.out.printf(" %s >>> %s = %s (representação binária %s)\n", value1, value2 , result, binaryResult);
+        // System.out.printf(" %s >>> %s = %s (representação binária %s)\n", value1, value2 , result, binaryResult);
         // System.out.println(Integer.toBinaryString(Integer.MAX_VALUE));
+
+        // Exercicios
+         var scanner = new Scanner(System.in);
+
+        // 01 - Escreva um código que receba o nome e o ano de nascimento de alguém e imprima na tela a seguinte mensagem: "Olá 'Fulano' você tem 'X' anos"
+        // System.out.println("Digite o nome: ");
+        // var nome = scanner.next();
+        // System.out.println("Digite o ano de nascimento");
+        // var ano_nascimento = scanner.nextInt();
+        // var ano_atual = 2026;
+        // var ano_atual = OffsetDateTime.now().getYear();
+        // System.out.printf("Olá %s, você tem %s anos", nome, ano_atual - ano_nascimento);
+
+        // 02 - Escreva um código que receba o tamanho do lado de um quadrado, calcule sua área e exiba na tela. fórmula: área=lado X lado
+        // System.out.println("Digite o lado do quadrado: ");
+        // var lado_quadrado = scanner.nextDouble();
+        // var area = lado_quadrado * lado_quadrado;
+        // System.out.printf("Um quadrado com lado %s x %s, tem %s de área", lado_quadrado, lado_quadrado, area);
+
+        // 03 - Escreva um código que receba a base e a altura de um retângulo, calcule sua área e exiba na tela. fórmula: área=base X altura
+        // System.out.println("Base do retângulo: ");
+        // var base = scanner.nextDouble();
+        // System.out.println("Altura do retângulo: ");
+        // var altura = scanner.nextDouble();
+        // var area = base * altura;
+        // System.out.printf("Um retângulo com %s de base e %s de altura, tem %s de área", base, altura, area);
+
+        // 04 - Escreva um código que receba o nome e a idade de 2 pessoas e imprima a diferença de idade entre elas
+        System.out.println("Digite o nome da primeira pessoa: ");
+        var nome1 = scanner.next();
+        System.out.println("Digite a idade da primeira pessoa: ");
+        var idade1 = scanner.nextInt();
+        System.out.println("Digite o nome da segunda pessoa: ");
+        var nome2 = scanner.next();
+        System.out.println("Digite a idade da segunda pessoa: ");
+        var idade2 = scanner.nextInt();
+        var diferenca_idade = idade2 - idade1;
+        System.out.printf("A diferença de idade das duas pessoas é de %s ano(s)", diferenca_idade);
+
     }
 
 }
