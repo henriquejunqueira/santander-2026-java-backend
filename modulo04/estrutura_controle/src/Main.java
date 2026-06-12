@@ -37,9 +37,9 @@ public class Main {
 //        System.out.println("Fim da execução");
 
         // Aula 02 - Estrutura condicional Switch case
-        var scanner = new Scanner(System.in);
-        System.out.println("Informe um número de 1 até 7");
-        var option = scanner.nextInt();
+//        var scanner = new Scanner(System.in);
+//        System.out.println("Informe um número de 1 até 7");
+//        var option = scanner.nextInt();
 //        var option = scanner.next();
 
 //        switch (option){
@@ -123,20 +123,143 @@ public class Main {
 //
 //        System.out.println(message);
 
-        var message = switch (option){
-            case 1, 7 -> {
-                var day = option == 1 ? "Domingo" : "Sábado";
-                yield String.format("Hoje é %s, fim de semana", day); // yield retorna a String no switch
-            }
-            case 2 -> "Segunda";
-            case 3 -> "Terça";
-            case 4 -> "Quarta";
-            case 5 -> "Quinta";
-            case 6 -> "Sexta";
-            default -> "Opção inválida";
-        };
+//        var message = switch (option){
+//            case 1, 7 -> {
+//                var day = option == 1 ? "Domingo" : "Sábado";
+//                yield String.format("Hoje é %s, fim de semana", day); // yield retorna a String no switch
+//            }
+//            case 2 -> "Segunda";
+//            case 3 -> "Terça";
+//            case 4 -> "Quarta";
+//            case 5 -> "Quinta";
+//            case 6 -> "Sexta";
+//            default -> "Opção inválida";
+//        };
+//
+//        System.out.println(message);
 
-        System.out.println(message);
+        // Aula 03 - Estrutura de repetição for
+//        var scanner = new Scanner(System.in);
+//        for(;;){
+//            System.out.println("Digite um nome: ");
+//            var name = scanner.next();
+//
+//            if(name.equalsIgnoreCase("exit")) break;
+//
+//            System.out.println(name);
+//        }
+
+//      var ii = 2;
+//        for(var i = 1; i <= 100; i++){
+//            if(i == 100){
+//                System.out.println("Fim da execução");
+//                break;
+//            }
+//
+//            System.out.println(i);
+//        }
+
+//        for(var i = 2; i <= 100; i+=2){
+//            System.out.println(i);
+//        }
+
+//        for(var i = 200; i >= 0; i--){
+//            System.out.println(i);
+//        }
+
+//        for(var i = 200; i >= 0; i-=2){
+//            System.out.println(i);
+//        }
+
+//        for(var i = 0; i <= 100; i++){
+//            if(i % 2 == 0) continue;
+//            System.out.println(i);
+//        }
+
+//        for(var i = 0; i < args.length; i++){
+//            System.out.println(args[i]);
+//        }
+
+//        for( var arg : args){
+//            System.out.println(arg);
+//        }
+
+//        for(var i = 0; i < args.length; i++){
+//            System.out.println(i + " - " + args[i]);
+//            System.out.println((i + 1) + " - " + args[i]);
+//        }
+
+        // Aula 04 - Estrutura de repetição while e do while
+        var scanner = new Scanner(System.in);
+//        var name = "";
+//        while(!name.equals("exit")){
+//            System.out.println("Informe um nome");
+//            name = scanner.next();
+//            System.out.println(name);
+//        }
+
+//        while(true){
+//            System.out.println("Informe um nome");
+//            name = scanner.next();
+//            System.out.println(name);
+//
+//            if (name.equalsIgnoreCase("exit")) break;
+//        }
+
+//        do{
+//            System.out.println("Informe um nome");
+//            name = scanner.next();
+//            System.out.println(name);
+//
+//            if(name.equalsIgnoreCase("exit")) break;
+//        }while(true);
+
+//        do{
+//            System.out.println("Informe um nome");
+//            name = scanner.next();
+//            System.out.println(name);
+//        }while(!name.equalsIgnoreCase("exit"));
+
+//        var name = "exit";
+//        do{
+//            System.out.println("Informe um nome");
+//            name = scanner.next();
+//            System.out.println(name);
+//        }while(!name.equalsIgnoreCase("exit"));
+
+//        var name = "exit";
+//        while(!name.equalsIgnoreCase("exit")){
+//            System.out.println("Informe um nome");
+//            name = scanner.next();
+//            System.out.println(name);
+//        }
+
+//        for(int i = 0; i < args.length; i++){
+//
+//        }
+
+//        for(var arg : args){
+//
+//        }
+
+//        while(true){
+//
+//        }
+
+//        do{
+//
+//        }while(true);
+
+        var i = 0;
+        while (args.length > i){
+            System.out.println(args[i]);
+        }
+
+        i = 0;
+
+        do{
+            System.out.println(args[i]);
+        }while (args.length > i);
 
     }
 }
